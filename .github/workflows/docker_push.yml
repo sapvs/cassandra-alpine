@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - 'master'
-
+    paths:
+      - Dockerfile
+          paths:
+      - '**.js'
 jobs:
   docker1:
     runs-on: ubuntu-latest
