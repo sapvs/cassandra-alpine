@@ -23,6 +23,14 @@ RUN tar -xzf apache-cassandra-${CASSANDRA_VERSION}-bin.tar.gz \
 # 9160: thrift service
 EXPOSE 7000 7001 7199 9042 9160
 
-USER java
+# 7000: intra-node communication
+# 7001: TLS intra-node communication
+# 7199: JMX
+# 9042: CQL
+# 9160: thrift service
+EXPOSE 7000 7001 7199 9042 9160
 
-ENTRYPOINT [ "./start_cassandra.sh", "cassandra", "-f"]
+USER java
+ENTRYPOINT [ "./start_cassandra.sh"]
+
+CMD [ "cassandra", "-f"]

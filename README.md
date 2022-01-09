@@ -6,7 +6,7 @@ Low profile Cassandra image on low profile oprenjre-alpine image
 ## Naming 
 Images are named as
 
-     sapvs/cassandra-alpine|<Cassandra version>-<Open Jre version>
+    sapvs/cassandra-alpine|<Cassandra version>-<Open Jre version>
 
 e.g.
 
@@ -15,6 +15,7 @@ e.g.
 ## Using this image
 
 Images are hosted at DockerHub
+
 
     docker pull sapvs/cassandra-alpine|4.0.1-8
 
@@ -34,7 +35,6 @@ Set below variables and required values in environment. [Sample](sample)
 | CASSANDRA_DC| This variable sets the datacenter name of this node. It will set the dc option of cassandra-rackdc.properties. You must set CASSANDRA_ENDPOINT_SNITCH to use the "GossipingPropertyFileSnitch" in order for Cassandra to apply cassandra-rackdc.properties, otherwise this variable will have no effect.|
 | CASSANDRA_RACK| This variable sets the rack name of this node. It will set the rack option of cassandra-rackdc.properties. You must set CASSANDRA_ENDPOINT_SNITCH to use the "GossipingPropertyFileSnitch" in order for Cassandra to apply cassandra-rackdc.properties, otherwise this variable will have no effect.|
 | CASSANDRA_ENDPOINT_SNITCH| This variable sets the snitch implementation this node will use. It will set the endpoint_snitch option of cassandra.yml.|
-
 
 ## Source Code
 
