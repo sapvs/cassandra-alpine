@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - 'master'
+    paths:
+      - Dockerfile
+      - start_cassandra.sh
 
 jobs:
   docker1:
