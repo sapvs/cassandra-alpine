@@ -6,6 +6,8 @@ on:
       - 'master'
     paths:
       - Dockerfile
+      - start_cassandra.sh
+
 jobs:
   docker1:
     runs-on: ubuntu-latest
