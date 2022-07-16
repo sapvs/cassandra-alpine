@@ -6,11 +6,11 @@ Low profile Cassandra image on low profile oprenjre-alpine image
 ## Naming 
 Images are named as
 
-    sapvs/cassandra-alpine|<Cassandra version>-<Open Jre version>
+    sapvs/cassandra-alpine:<Cassandra version>-<Open Jre version>
 
 e.g.
 
-    sapvs/cassandra-alpine|4.0.1-8
+    sapvs/cassandra-alpine:4.0.1-8
 
 ## Using this image
 
